@@ -1,0 +1,104 @@
+/* Set default styles for all elements to have no margin or padding, and to use border-box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(background.jpg) no-repeat center center/ cover;
+  height: 100vh;
+}
+
+#container {
+  width: 500px;
+}
+
+header {
+  font-family: "Roboto", sans-serif;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+}
+
+/* Style for the spinner element, used for indicating loading */
+#spinner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+  border-top-color: #248f24;
+  margin: 0 auto;
+  animation: spin 0.5s linear infinite;
+  display: none;
+}
+
+/* Animation to rotate the spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Style for the loading text, used for indicating loading */
+.load-text {
+  font-size: 1.2rem;
+  margin: 5px auto;
+  display: none;
+}
+
+#main-content {
+  width: 100%;
+  min-height: 200px;
+  background-color: #fff;
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px;
+}
+
+#quote-person {
+  display: block;
+}
+
+#quote-wrap {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Add a dash before the author name */
+#author {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: green;
+  text-transform: uppercase;
+}
+#author::before {
+  content: "- ";
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+  margin-top: 10px;
+  border-style: none;
+}
+
+button:active {
+  background-color: blue;
+}

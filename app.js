@@ -5,10 +5,11 @@ let author = document.querySelector("#author");
 const spinner = document.querySelector("#spinner");
 const content = document.querySelector("#quote-person");
 const loadText = document.querySelector(".load-text");
+const animeSelect = document.querySelector("#anime-select");
+const animeText = document.querySelector('.anime-select');
 
 // The API URL for fetching data
-const api_url =
-  "https://animechan.vercel.app/api/random/anime?title=Attack On Titan";
+const api_base_url = `https://animechan.vercel.app/api/random`;
 
 // Function to fetch data from the API
 function getApi() {
@@ -20,9 +21,17 @@ function getApi() {
   loadText.style.display = "block";
   content.style.display = "none";
 
+  //Get the selected anime from the anime select
+  const selectedAnime = animeSelect.value;
+  animeText.innerText = selectedAnime;
+
+  //Construct the API url with the selected value
+  const api_url = `${api_base_url}/anime?title=${selectedAnime}`;
+
   fetch(api_url)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       // Extract the quote and author from the API data
       const apiQuote = data.quote;
       const apiAuthor = data.character;
@@ -57,3 +66,25 @@ document.addEventListener("keydown", function (e) {
     btn.click();
   }
 });
+
+//Fetch anime names form the API and add them to the select element
+fetch("https://animechan.vercel.app/api/available/anime")
+  .then((response) => response.json())
+  .then((animeNames) => {
+    //Add options for each anime name
+    animeNames.forEach((animeName, index) => {
+      if (index !== 0) {
+        const optionElement = document.createElement("option");
+        optionElement.value = animeName;
+        optionElement.text = animeName;
+        animeSelect.appendChild(optionElement);
+      }
+    });
+
+    // Set the default value for the select element
+    animeSelect.value = "Attack on Titan";
+
+  })
+  .catch((error) => {
+    console.log(error);
+  });

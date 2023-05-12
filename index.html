@@ -16,7 +16,7 @@
   </head>
   <body>
     <div id="container">
-      <header><h2>AOT Quote Generator</h2></header>
+      <header><h2><span class="anime-select">Anime</span> Quote Generator</h2></header>
       <div id="main-content">
         <div id="spinner"></div>
         <div class="load-text">Generating Quote...</div>
@@ -28,6 +28,22 @@
         </div>
         <div id="new-quote">
           <button>New Quote (press <kbd>SPACE</kbd>)</button>
+        </div>
+        <div id="select-options">
+          <label for="anime-select"
+            >Quotes from anime:
+            <select name="anime" id="anime-select">
+              option
+            </select>
+          </label>
+
+        <!-- Quote from character functionality will be added soon -->
+          <!-- <label for="character-select"
+            >Quotes from character:
+            <select name="character" id="character-select">
+              option
+            </select>
+          </label> -->
         </div>
       </div>
     </div>

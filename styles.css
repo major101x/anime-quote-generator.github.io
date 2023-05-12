@@ -102,3 +102,23 @@ button {
 button:active {
   background-color: blue;
 }
+
+#select-options {
+  margin-top: 10px;
+}
+#select-options label{
+  font-size: 1.1rem;
+}
+#select-options select {
+  margin: 5px auto;
+  height: 30px;
+  border-radius: 5px;
+  border: 3px solid black;
+  font-size: 1.1rem;
+  max-width: 100%;
+  transition: border .1s ease-in-out;
+}
+#select-options select:hover {
+  border: 5px solid green;
+}
+

@@ -1,6 +1,6 @@
-# AOT Quote Generator
+# Anime Quote Generator
 
-AOT Quote Generator is a simple web application that generates random quotes from the anime series Attack on Titan. The application uses the [AnimeChan API](https://animechan.vercel.app/) to fetch the data.
+Anime Quote Generator is a simple web application that generates random quotes from popular anime series. The application uses the [AnimeChan API](https://animechan.vercel.app/) to fetch the data.
 
 ## Getting Started
 
@@ -9,7 +9,7 @@ To get started, simply open the `index.html` file in your web browser.
 ```bash
 open index.html
 ```
-
+Select the anime you want to display quotes from (Attack On Titan by default)
 Click the "New Quote" button to generate a new quote.
 
 ## Built With

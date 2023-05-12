@@ -31,4 +31,4 @@ Click the "New Quote" button to generate a new quote.
 * [Stack Overflow](https://stackoverflow.com/) and other online resources for helping me solve coding problems.
 
 ## Website Demo
-To visit the website, go to https://major101x.github.io/aot-quote-generator.github.io
+To visit the website, go to https://major101x.github.io/anime-quote-generator.github.io

@@ -29,3 +29,6 @@ Click the "New Quote" button to generate a new quote.
 ## Acknowledgments
 * [AnimeChan API](https://animechan.vercel.app/) for providing the anime quotes used in this project.
 * [Stack Overflow](https://stackoverflow.com/) and other online resources for helping me solve coding problems.
+
+## Website Demo
+To visit the website, go to https://major101x.github.io/aot-quote-generator.github.io

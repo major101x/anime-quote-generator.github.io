@@ -1,6 +1,6 @@
 # Anime Quote Generator
 
-Anime Quote Generator is a Web application that generates random quotes from popular anime series. The application uses the [AnimeChan API](https://animechan.vercel.app/) to fetch the data.
+Anime Quote Generator is a web application that generates random quotes from popular anime series. The application uses the [AnimeChan API](https://animechan.vercel.app/) to fetch the data.
 
 ## Getting Started
 
